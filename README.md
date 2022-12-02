@@ -22,3 +22,11 @@ La taula "movie person" esta relacionada amb les taules "person", "rol " i “mo
 SELECT person_name, person_country, person_dob from tb_person WHERE person_dod IS NULL ORDER BY person_dob ASC;
 
 ----------------------------------------------------- Exercici 3 --------------------------------------------------------------------------------
+
+SELECT count(movie_genre_id), movie_title, movie_genre_id, genre_name FROM tb_movie 
+INNER JOIN tb_genre 
+ON movie_genre_id = genre_id 
+GROUP BY movie_genre_id
+ORDER BY count(movie_genre_id) DESC;
+
+----------------------------------------------------- Exercici 4 --------------------------------------------------------------------------------
