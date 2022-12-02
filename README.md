@@ -18,3 +18,7 @@ La taula "movie person" esta relacionada amb les taules "person", "rol " i “mo
 
 
 ----------------------------------------------------- Exercici 2 --------------------------------------------------------------------------------
+
+SELECT person_name, person_country, person_dob from tb_person WHERE person_dod IS NULL ORDER BY person_dob ASC;
+
+----------------------------------------------------- Exercici 3 --------------------------------------------------------------------------------
