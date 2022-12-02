@@ -12,7 +12,7 @@ Hi ha cinc taules que es distribueixen de la següent manera:
 - la taula "person" amb 42 entrades
 - la taula "role" amb 5 entrades 
 
-La taula "movie" I "genere"estan relacionades entre si perquè la primera conte un camp que indica el "genere" de la pel·lícula.
+La taula "movie" i "genere"estan relacionades entre si perquè la primera conte un camp que indica el "genere" de la pel·lícula.
 
 La taula "movie person" esta relacionada amb les taules "person", "rol " i “movie” ja que "movie person" conté els ids d’aquestes taules.
 
