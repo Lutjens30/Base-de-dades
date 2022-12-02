@@ -43,3 +43,5 @@ VALUES (69, 'Documental', 'Diana');
   delete from tb_movie where movie_name = 'La Gran Familia Española';
 
 ----------------------------------------------------- Exercici 7 --------------------------------------------------------------------------------
+
+  update tb_movie set movie_genre_id = 3 where movie_title = "Ocho apellidos catalanes";
