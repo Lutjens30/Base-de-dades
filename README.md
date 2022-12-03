@@ -31,6 +31,16 @@ ORDER BY count(movie_genre_id) DESC;
 
 ----------------------------------------------------- Exercici 4 --------------------------------------------------------------------------------
 
+SELECT count(distinct tb_movie_person.role_id), person_name FROM tb_movie_person
+INNER JOIN tb_person
+ON tb_movie_person.person_id = tb_person.person_id
+INNER JOIN tb_movie 
+ON tb_movie_person.movie_id = tb_movie.movie_id
+INNER JOIN tb_role
+ON tb_movie_person.role_id = tb_role.role_id
+GROUP BY tb_person.person_id
+HAVING count(distinct tb_movie_person.role_id) > 1;
+
 ----------------------------------------------------- Exercici 5 --------------------------------------------------------------------------------
 
 INSERT INTO tb_genre (genre_id, genre_name, created_by_user)
